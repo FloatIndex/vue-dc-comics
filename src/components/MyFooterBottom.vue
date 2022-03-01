@@ -8,19 +8,19 @@
                     <a class="follow-us" href="#">follow us</a>
                 </li>
                 <li>
-                    <a href="#">F<i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 </li>
                 <li>
-                    <a href="#">T<i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 </li>
                 <li>
-                    <a href="#">Y<i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </li>
                 <li>
-                    <a href="#">P<i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
                 </li>
                 <li>
-                    <a href="#">M<i class="fa-solid fa-location-dot"></i></a>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i></a>
                 </li>
             </ul>
         </div>
@@ -38,7 +38,7 @@ export default {
 @import "../assets/style/variables.scss";
 
 .footer-bottom {
-    background-color: #303030;
+    background-color: $grey;
 
     .container {
         height: 90px;
@@ -63,12 +63,24 @@ export default {
             color: $primaryColor;
             text-transform: uppercase;
             font-weight: bold;
+
+            &:hover {
+                color: $secondaryColor;
+            }
         }
 
         li {
             display: inline-block;
             color: $secondaryColor;
             margin-left: 30px;
+
+            svg {
+                transform: scale(1.5);
+
+                &:hover {
+                color: $primaryColor;
+                }
+            }
         }
         
     }

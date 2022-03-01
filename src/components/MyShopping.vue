@@ -48,7 +48,7 @@ export default{
     color: #fff;
 
     .container {
-    height: 150px;
+        height: 120px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -59,7 +59,12 @@ export default{
 
             a {
                 text-transform: uppercase;
-                padding: 10px 30px;
+                padding: 10px 0px;
+                margin: 0px 30px;
+
+                &:hover {
+                    color: $darkGrey;
+                }
 
                 img {
                     height: 40px;

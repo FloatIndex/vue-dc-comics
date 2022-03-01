@@ -52,6 +52,8 @@ export default{
 
 
 <style scoped lang="scss">
+@import "../assets/style/variables.scss";
+
 nav {
     height: 90px;
     display: flex;
@@ -77,10 +79,21 @@ nav {
 
         li {
             display: inline-block;
-            text-transform: uppercase;
             padding: 0px 20px;
-            font-size: 0.9rem;
-            line-height: 25px;
+            line-height: 86px;
+
+            a {
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                font-weight: bold;
+                display: inline-block;
+                border-bottom: 4px solid transparent;
+
+                &:hover {
+                    border-color: $primaryColor;
+                    color: $primaryColor;
+                }
+            }
         }
     }
 }
